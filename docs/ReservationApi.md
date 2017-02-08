@@ -69,6 +69,11 @@ import waitlisted
 from waitlisted.rest import ApiException
 from pprint import pprint
 
+# Configure API key authorization: api_key
+waitlisted.configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# waitlisted.configuration.api_key_prefix['X-API-Key'] = 'Bearer'
+
 # create an instance of the API class
 api_instance = waitlisted.ReservationApi()
 body = waitlisted.ReservationRequest() # ReservationRequest | Reservation Data
@@ -91,7 +96,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[api_key](../README.md#api_key)
 
 ### HTTP request headers
 
